@@ -125,6 +125,7 @@ cdef extern from "enet/enet.h":
         enet_uint32 totalReceivedPackets
         ENetInterceptCallback intercept
         ENetChecksumCallback checksum
+        enet_uint8 usingNewPacket
 
     ctypedef enum ENetEventType:
         ENET_EVENT_TYPE_NONE = 0
